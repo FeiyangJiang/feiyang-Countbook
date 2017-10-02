@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:text="@string/counter_name" />
+
+    <EditText
+        android:id="@+id/init"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Initial value"
+        android:gravity="center_vertical|center"
+        android:inputType="number"
+        android:singleLine="false"
+        android:text=""
+        android:layout_weight="0.16" />
+
+    <EditText
+        android:id="@+id/com"
+        style="@android:style/Widget.Holo.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:gravity="center_vertical|center"
+        android:text="@string/counter_comment"
+        android:layout_weight="0.19" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:text="@string/finish" />
+</LinearLayout>
