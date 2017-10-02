@@ -32,7 +32,7 @@ public class Add extends Activity {
     private EditText nameT;
     private EditText initT;
     private EditText comT;
-
+    private CounterBook counterBook;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_counter);

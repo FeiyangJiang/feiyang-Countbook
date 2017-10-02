@@ -37,6 +37,7 @@ public class Display extends Activity {
     private int editLocation=-1;
     private ArrayList<CounterBook> CounterBooks;
     private ArrayAdapter<CounterBook> adapter;
+    private CounterBook counterBook;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
