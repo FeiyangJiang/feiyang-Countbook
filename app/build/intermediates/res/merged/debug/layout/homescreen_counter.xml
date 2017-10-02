@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ListView
+        android:id="@+id/counterList"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:scrollbars="vertical"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/darker_gray"
+        android:layout_weight="0.95"></ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:text="@string/add" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="184dp"
+                android:layout_height="match_parent"
+                android:text="Delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/increase"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:text="@string/counter_increase" />
+
+            <Button
+                android:id="@+id/decrease"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:text="@string/counter_decrease" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:text="Reset" />
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:text="Edit" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
